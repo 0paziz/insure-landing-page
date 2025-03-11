@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/insure-landing-page/static/css/main.f76c51ab.css",
+    "main.js": "/insure-landing-page/static/js/main.be25fc16.js",
+    "index.html": "/insure-landing-page/index.html",
+    "main.f76c51ab.css.map": "/insure-landing-page/static/css/main.f76c51ab.css.map",
+    "main.be25fc16.js.map": "/insure-landing-page/static/js/main.be25fc16.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f76c51ab.css",
+    "static/js/main.be25fc16.js"
+  ]
+}
