@@ -1,0 +1,96 @@
+
+.hero-container{
+    height: 500px;
+    background-color:hsl(256, 26%, 20%) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px 50px;
+}
+#intro-right-des {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    z-index: 2;
+    width: 30%; 
+
+  }
+  #intro-left-mobile,#intro-right-mobile{display: none;}
+  #intro-left-des {
+
+    position: absolute;
+    bottom: -140px;
+    left: 1px;
+    z-index: 5;
+    width: 10%; 
+  }
+
+  #HorizentalHeroSection{color: rgb(255, 255, 255); width: 180px;  text-align: justify; }
+
+.intro-image{ width: 50%;}
+#intro-image{
+    width: 80%;
+    position: relative;
+    top: 150px;
+    z-index: 1;
+    margin: 0;
+  
+}
+.content-container{
+    padding: 50px 70px;
+    align-items: center;
+    display: flex; justify-content: space-between; color: white;
+}
+
+.text-container{
+width: 50%;
+    gap: 10px;
+ }
+ .text-container>*{margin: 5px;}
+ .text-container>hr{margin-bottom: 50px;}
+
+ #title{ font-size: 4.0rem;     font-family: "serif"; font-optical-sizing: auto; font-weight: 400, 700; font-style: normal;}
+ #description{color: hsl(273, 4%, 51%);}
+
+ 
+#hero-plans{ border:none ;    background-color:hsl(256, 26%, 20%) ;
+    padding: 8px 25px; cursor: pointer;  border: 2px solid rgb(255, 255, 255); font-weight: bold;
+    color: white;
+}
+
+#hero-plans:hover{ background-color: rgb(255, 255, 255); color: black;}
+
+@media (max-width: 430px) {
+    #HorizentalHeroSection{display:none;}
+    .hero-container{padding: 150px 0; height: auto;}
+    .content-container{display: flex; flex-direction: column; justify-content: center; padding: 10px 0px;}
+    .intro-image{width: 100%;} .text-container{ width: 100%; text-align: center; margin-top: 70%; }  #title{ font-size: 3.0rem; padding: 15px; }
+    #hero-plans{margin-top: 15px;}
+    #intro-left-des, #intro-right-des{display: none;}
+    #intro-image{
+      
+        width: 100%;
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        margin: 0;
+      
+    }
+
+    #intro-right-mobile{ 
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+        width: 50%}
+
+    #intro-left-mobile{
+        display: block; 
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 50%; }
+}

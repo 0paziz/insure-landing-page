@@ -1,0 +1,62 @@
+#down-feutures{
+    display: flex;
+     padding: 50px 150px;
+     align-items: center;
+ }
+ #about-work{
+     border:none ;   
+     background-color: hsl(256, 26%, 20%);
+        padding: 10px 12px; cursor: pointer;  border: 2px solid rgb(255, 255, 255); font-weight: bold;
+        color: white;
+        font-size: 12px;
+        width: 150px;
+ 
+        position: relative;
+        z-index: 50;
+    }
+    
+    #about-work:hover{ background-color: rgb(255, 255, 255); color: black;}
+    
+    .more-about-us-container{
+        display: flex;
+        background-color: hsl(256, 26%, 20%);
+        justify-content: space-between;
+        align-items: center;
+        font-family:  'serif'; font-optical-sizing: auto; font-weight: 400, 700; font-style: normal;
+        color: white;
+        padding: 10px 50px;
+        width: 100%;
+        position: relative;
+     overflow: hidden;
+    }
+ 
+ #fnabt{ font-size: 3.50rem; padding: 1px 25px; width: 60%;}
+ #how-we-work-mobile{display: none;}
+ #how-we-work-des{
+     position: absolute;
+             top: 0;
+             right: 0;
+             width: 50%; /* Adjust size */
+             height: auto;
+             z-index: 1; /* Ensures it's behind the button */
+             opacity: 0.5; /* Optional transparency */
+    
+   
+ }
+ 
+ @media (max-width: 430px) {
+    .more-about-us-container{display: flex; justify-content: center; flex-direction: column; align-items: center;    padding: 70px 5px;}
+    #down-feutures{ margin:30% 0; padding: 0 20px;}  #fnabt{font-size: 3.0rem; padding: 1px 5px; text-align: center; width: 100%;}
+    #about-work{padding: 10px 20px;}  #how-we-work-des{display: none;}
+    #how-we-work-mobile{
+        
+        display: block; 
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 70%; /* Adjust size */
+        height: auto;
+        z-index: 1; /* Ensures it's behind the button */
+        opacity: 0.5; /* Optional transparency */
+    }
+ }
